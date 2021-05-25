@@ -1,0 +1,41 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+<!-- Main Site -->
+<div class="d-flex justify-content-center h-100">
+    <lottie-player
+  class="center-block"
+  src="https://assets1.lottiefiles.com/datafiles/KbKSrbWahtNPvY6/data.json"
+  background="transparent"
+  speed="1"
+  style="width: 300px; height: 300px"
+  loop
+  autoplay
+></lottie-player>
+</div>
+<main id="site-main" style="padding-top: 0;margin-top: 0;">
+  <div class="container">
+    <!-- <div class="box-nav d-flex justify-between">
+           <div class="filter">
+               <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+           </div>
+        </div> -->
+
+    <div class="form-title text-center">
+        <h4
+         class="text-dark font-weight-bold">LEAD Integrated Services going to launch a new magazine website.</h4>
+
+      <h4 class="text-primary font-weight-bold">Please complete our survey questionnaire to help us improve our service</h4>
+      <span class="text-dark"></span>
+    </div>
+
+    <!-- add user form -->
+    <%- include('include/_form') %>
+  </div>
+</main>
+<!-- /Main Site -->
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /include footer -->

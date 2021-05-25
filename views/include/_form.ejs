@@ -1,0 +1,162 @@
+<!-- form handling -->
+<form action="/api/users" method="POST" id="add_user">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="name" class="text-dark font-weight-bold">1. Name</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="name" value="" placeholder="Enter Your Name" />
+    </div>
+
+    <label for="gender" class="text-dark font-weight-bold">2. Gender</label>
+    <div class="form-group">
+      <div class="radio inline">
+        <input type="radio" id="radio-2" name="gender" value="Male" />
+        <label for="radio-2" class="radio-label">Male</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-3" name="gender" value="Female" />
+        <label for="radio-3" class="radio-label">Female</label>
+      </div>
+    </div>
+    <label for="agegroup" class="text-dark font-weight-bold">3. Age Group</label>
+    <div class="form-group">
+      <div class="radio inline">
+        <input type="radio" id="radio-4" name="agegroup" value="Male" />
+        <label for="radio-4" class="radio-label">18-30</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-5" name="agegroup" value="31-40" />
+        <label for="radio-5" class="radio-label">31-40</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-6" name="agegroup" value="41-50" />
+        <label for="radio-6" class="radio-label">41-50</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-7" name="agegroup" value="50-60" />
+        <label for="radio-7" class="radio-label">50-60</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="source" class="text-dark font-weight-bold"
+          >4.What source of news do you believe in</label
+        >
+        <select class="form-control form-select" name="source">
+          <option value="none">Select</option>
+          <option value="Television">Television</option>
+          <option value="Newspaper">Newspaper</option>
+          <option value="Webarticles">Web articles</option>
+          <option value="YouTubenewschannels">YouTube news channels</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="channel" class="text-dark font-weight-bold"
+          >5.What Channel do you watch in television to watch news</label
+        >
+        <select class="form-control" name="channel">
+          <option value="none">Select</option>
+          <option value="Television">Polimer, Puthyathalaimurai</option>
+          <option value="BBC, Aljazeera, Yon">BBC, Aljazeera, Yon</option>
+          <option value="CNN IBN, CNBC">CNN IBN, CNBC</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="category" class="text-dark font-weight-bold"
+          >6.Which News do you prefer</label
+        >
+        <select class="form-control" name="category">
+          <option value="none">Select</option>
+          <option value="Entertainment">Entertainment</option>
+          <option value="Politics">Politics</option>
+          <option value="Infotainment">Infotainment</option>
+          <option value=" Lifestyle">Lifestyle</option>
+          <option value=" Current Happenings">Current Happenings</option>
+          <option value=" Sports">Sports</option>
+          <option value="  Healthcare">Healthcare</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="brand" class="text-dark font-weight-bold"
+          >7.Which Newspaper do you read?</label
+        >
+        <select class="form-control" name="brand">
+          <option value="none">Select</option>
+          <option value="Hindu, Times of India, Express, Deccan">Hindu, Times of India, Express, Deccan
+          </option>
+          <option value=" Economic Times, Business Line">
+           Economic Times, Business Line
+          </option>
+          <option
+            value="Dinamalar, Dina Thanti, The Hidu tamil, Dinakaran, Malai Murrasssu."
+          >
+            Dinamalar, Dina Thanti, The Hidu tamil, Dinakaran, Malai
+            Murrasssu.
+          </option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="article" class="text-dark font-weight-bold"
+          >8.Which Web article you prefer the most?</label
+        >
+        <select class="form-control" name="article">
+          <option value="none">Select</option>
+          <option value=" One India">One India</option>
+          <option value=" Yahoo">Yahoo</option>
+          <option value="CNN">CNN</option>
+          <option value="CNBC">CNBC</option>
+          <option value="Buzz Feed">Buzz Feed</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="youtube" class="text-dark font-weight-bold"
+          >9. Which YouTube channel you watch the most</label
+        >
+        <select class="form-control" name="youtube">
+          <option value="none">Select</option>
+          <option value="Newsgiltzs">Newsgiltzs</option>
+          <option value="Bloomberg Quint">Bloomberg Quint</option>
+          <option value="One India news">One India news</option>
+          <option value="Mirror">Mirror</option>
+          <option value="Others">Others</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="formui-dropdown">
+        <label for="language" class="text-dark font-weight-bold"
+          >10.  In which language do you prefer to watch a news</label
+        >
+        <select class="form-control" name="language">
+          <option value="none">Select</option>
+          <option value="Tamil">Tamil</option>
+          <option value="English">English</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="referral" class="text-dark font-weight-bold">11. Please Enter Your Referral</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="referral" value="" placeholder="Referral" />
+    </div>
+
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-primary btn-lg">Submit the survey</button>
+    </div>
+  </div>
+</form>
